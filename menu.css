@@ -1,0 +1,499 @@
+@font-face {
+    font-family:list;
+    src: url(Momcake.otf);
+}
+@font-face {
+    font-family: h1;
+    src: url(aliyah.otf);
+}
+@font-face {
+    font-family:cream;
+    src: url(cream.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(255, 125, 203);
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+    top: 0;
+z-index: 1;
+  }
+
+.navbar ul{
+    display: flex;
+    color: white;
+}
+.navbar li{
+    padding-top: 30px;
+    list-style-type: none;
+    margin-left: 75px;
+  
+  
+
+
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family:'cream';
+    font-size: 20px;
+
+}
+.icon{
+    display: flex;
+    margin-right: 100px;
+}
+.icon ul{
+    display: flex;
+}
+.icon li{
+    padding-top: 30px;
+    list-style-type: none;
+    margin-right: 100px;
+
+}
+.icon li a{
+    color: whitesmoke;
+    font-family:cream;
+    font-size: large;
+}
+.navbar ul li a:hover{
+    color: rgb(151, 239, 239)
+}
+
+.logo{
+    width:fit-content;
+    height:fit-content;
+}
+
+  body{
+    background-image: url(bckkk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.menu{
+    margin-top: 100PX;
+}
+  
+.menu .cakes{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+   
+
+ 
+}
+.cakes .ul1 h1{
+    width: 100%;
+    
+    font-size: 50px;
+    font-family:h1;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 150px;
+    margin-left: 70px;
+  
+
+}
+.cakes .ul1 ul{
+    width: 100%;
+  
+    height: auto;
+    font:30px list ;
+    text-align: end;
+    list-style-type: none;
+    letter-spacing: 7px;
+    line-height: 50px;
+    margin-right: 100px;
+
+
+}
+.cakes .ul1 ul li{
+    position: relative;
+    width: fit-content;
+}
+.cakes .ul1  ul li::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 3px;
+    background-color:rgb(169, 233, 247);
+}
+
+.cakes .ul1 ul li:hover::after{
+    left: 0;
+    right: 0;
+    transition: 1s;
+    
+}
+.cakes .image{
+  
+   margin-top: 100px;
+margin-right: 50px;
+
+}
+.menu .cookies{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+
+   
+
+ 
+}
+.cookies .ul2{
+    order: 2;
+}
+.cookies .ul2 h1{
+    width: 100%;
+    
+    font-size: 50px;
+    font-family:h1;
+    text-align: center;
+    letter-spacing: 2px;
+  margin-top: 150px;
+  
+  
+
+}
+.cookies .ul2 ul{
+    width: 100%;
+    height: auto;
+    font:30px list ;
+    text-align: start;
+    list-style-type: none;
+    letter-spacing: 7px;
+    line-height: 50px;
+    margin-right: 100px;
+
+
+}
+.cookies .image1{
+    margin-top: 200px;
+    margin-left: 50px;
+order:1;
+
+}
+.menu .fairycake{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+
+   
+
+ 
+}
+
+.fairycake .ul3 h1{
+    width: 100%;
+    
+    font-size: 50px;
+    font-family:h1;
+    text-align: center;
+    letter-spacing: 2px;
+  margin-top: 150px;
+  margin-left: 100px;
+  
+  
+
+}
+.fairycake .ul3 ul{
+    width: 100%;
+    height: auto;
+    font:30px list ;
+    text-align: end;
+    list-style-type: none;
+    letter-spacing: 7px;
+    line-height: 50px;
+    margin-right: 30%;
+
+
+}
+.fairycake .image2{
+    margin-top: 200px;
+   
+margin-right: 100px;
+
+}
+.menu .tart{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+
+   
+
+ 
+}
+.tart .ul4{
+    order: 2;
+}
+.tart .ul4 h1{
+    width: 100%;
+    
+    font-size: 50px;
+    font-family:h1;
+    text-align: center;
+    letter-spacing: 2px;
+  margin-top: 150px;
+  margin-right: 150px;
+  
+  
+
+}
+.tart .ul4 ul{
+    width: 100%;
+    height: auto;
+    font:30px list ;
+    text-align: start;
+    list-style-type: none;
+    letter-spacing: 7px;
+    line-height: 50px;
+    margin-right: 150px;
+
+
+}
+.tart .image3{
+    margin-top: 200px;
+    margin-left: 50px;
+order:1;
+
+}
+.menu .brownie{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+
+   
+
+ 
+}
+
+.brownie .ul5 h1{
+    width: 100%;
+    
+    font-size: 50px;
+    font-family:h1;
+    text-align: center;
+    letter-spacing: 2px;
+  margin-top: 150px;
+  margin-left: 100px;
+  
+  
+
+}
+.brownie .ul5 ul{
+    width: 100%;
+    height: auto;
+    font:30px list ;
+    text-align: end;
+    list-style-type: none;
+    letter-spacing: 7px;
+    line-height: 50px;
+    margin-right: 30%;
+
+
+}
+.brownie .image4{
+    margin-top: 200px;
+   
+margin-right: 100px;
+
+}
+.menu .macroon{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+
+   
+
+ 
+}
+.macroon .ul6{
+    order: 2;
+}
+.macroon .ul6 h1{
+    width: 100%;
+    
+    font-size: 50px;
+    font-family:h1;
+    text-align: center;
+    letter-spacing: 2px;
+  margin-top: 150px;
+  
+  
+
+}
+.macroon .ul6 ul{
+    width: 100%;
+    height: auto;
+    font:30px list ;
+    text-align: start;
+    list-style-type: none;
+    letter-spacing: 7px;
+    line-height: 50px;
+    margin-right: 100px;
+
+
+}
+.macroon .image5{
+    margin-top: 200px;
+    margin-left: 50px;
+order:1;
+
+}
+.footer{
+    
+    width: 100%;
+    height: 300px;
+   }
+   
+   .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+   }
+   
+      .footer .bakers{
+        width: 30%;
+        height: auto;
+    
+      }
+      .footer .bakers h1{
+        font-family: list;
+        text-align: center;
+        text-shadow: #f4a8ea;
+      }
+      .footer .bakers p{
+        font-family: cream;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .bakers button{
+    padding: 10px 25px;
+    margin-left: 30%;
+    margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-family: list;
+      border-radius: 40px;
+      border: solid 1px black;
+      background-color:rgb(255, 192, 229);
+      transition: all ;
+      transition-duration: 1s;
+      
+      }
+      .bakers button:hover{
+        background-color: #caf4f9;
+    
+  
+      }
+      .footer .order{
+        width: 30%;
+        height: auto;
+      }
+      .footer .order h1{
+       text-align: center;
+       font-family: list;
+      }
+      .footer .order p{
+       padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-family: cream;
+      }
+      .order button{
+        padding: 10px 25px;
+    margin-left: 40%;
+    margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-family: list;
+      border-radius: 40px;
+      border: solid 1px black;
+      background-color: rgb(255, 192, 229);
+      transition: all;
+      transition-duration: 1s;
+      
+      }
+      .order button:hover{
+        background-color: #c0f8ee;
+  
+      }
+     
+  
+  .footer .contact{
+     width: 30%;
+     height: auto;
+  
+  
+   }
+   .footer .contact h1{
+    text-align: center;
+    font-family: list;
+   }
+   .footer .contact .social-link{
+    padding:20px;
+    text-align: center;
+    font-size: 20px;
+  
+   }
+  .contact .social-link a{
+    
+     display: inline-block;
+     font-size: 30px;
+     width: 50px;
+     height: 50px;
+     background-color: rgb(255, 192, 229);
+     text-align: center;
+     line-height: 50px;
+     border-radius: 50%;
+     color: black;
+     transition: all ;
+     transition-duration: 1s;
+  
+  
+   }
+   
+   .contact .social-link a:hover{
+     background-color: #c9f3fb;
+  
+   }
+   .copyrights{
+      background-color:rgb(255, 136, 207);
+      width: 100%;
+      height:75px;
+      display: flex;
+      justify-content: space-around;
+   }
+   .copyrights h3{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family:list;
+   }
+  
+
+
+  
+
+

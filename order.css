@@ -1,0 +1,345 @@
+@font-face {
+    font-family:cream;
+    src: url(cream.ttf);
+  }
+  @font-face {
+    font-family: momcake;
+      src: url(Momcake.otf);
+  }
+  @font-face {
+    font-family: style;
+    src: url(aliyah.otf);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    
+
+  }
+  header{
+    background-color: rgb(255, 125, 203);
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+    z-index: 1;
+
+  }
+
+.navbar ul{
+    display: flex;
+    color: white;
+}
+.navbar li{
+    padding-top: 30px;
+    list-style-type: none;
+    margin-left: 75px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family:'cream';
+    font-size: 20px;
+
+}
+.icon{
+    display: flex;
+    margin-right: 100px;
+}
+.icon ul{
+    display: flex;
+}
+.icon li{
+    padding-top: 30px;
+    list-style-type: none;
+    margin-right: 100px;
+
+}
+.icon li a{
+    color: whitesmoke;
+    font-family:cream;
+    font-size: large;
+}
+.navbar ul li a:hover{
+    color: rgb(151, 239, 239)
+}
+
+.logo{
+    width:fit-content;
+    height:fit-content;
+}
+body{
+    background: linear-gradient( pink,rgb(215, 250, 250), rgb(181, 250, 250),pink, rgb(254, 162, 208));
+}  
+  .now h1{
+    position: relative;
+    left: 0px;
+    top: 280px;
+    width:100%;
+    height:70vh;
+    font-family: momcake;
+    font-size: 50px;
+    letter-spacing: 7px;
+     text-align: center;
+     overflow: hidden;
+ }
+
+  .ordr{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.ordr .image{
+    width: 100%;
+}
+
+
+.ordr .pickup{
+    margin-right: 150px;
+    margin-top: 100px;
+
+}
+.ordr .pickup h2{
+    width: 30rem;
+ 
+    font-size: 50px;
+    font-family: style;
+    letter-spacing: 5;
+    text-align:center;
+    line-height: 3;
+}
+.ordr .pickup p{
+   
+    font-size: 30px;
+    font-family: momcake;
+    letter-spacing: 5;
+    line-height: 1;
+
+}
+.pickup button{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cream;
+    background-color:rgb(253, 156, 203);
+    border: solid 2px rgb(246, 99, 187);
+    opacity: 98%;
+    border-radius: 5px 10px 5px 10px;
+   
+}
+.sameday{
+    display: flex;
+    justify-content: space-between;
+}
+.sameday .image2{
+    height: fit-content;
+    order: 2;
+
+}
+.sameday .pack{
+    order: 1;
+}
+.sameday .pack h2{
+
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: style;
+    letter-spacing: 5;
+    line-height: 2;
+    text-align: center;
+}
+.sameday .pack p{
+    margin-top: 30px;
+    margin-left: 10rem;
+    font-size: 30px;
+    font-family: momcake;
+    letter-spacing: 5;
+    line-height: 1;
+    
+    
+}
+.pack button{
+    margin-top: 50px;
+    margin-left: 25rem;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cream;
+    background-color: rgb(188, 230, 215);
+    border: solid 2px rgb(121, 246, 227);
+    opacity: 99%;
+    border-radius: 5px 10px 5px 10px;
+    
+}
+.event{
+    display: flex;
+    justify-content: space-between;
+}
+.events h2 {
+    text-align: center;
+    margin-top:40px;
+    font-size: 50px;
+    font-family: style;
+    letter-spacing: 7;
+    line-height: 3;
+
+}
+.events p{
+    margin-left: 60px;
+    font-size: 30px;
+    text-align:start;
+    font-family: momcake;
+    letter-spacing: 5;
+    line-height: 1;
+
+}
+.events button{
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cream;
+    background-color:rgb(173, 231, 211);
+    border: solid 2px rgb(153, 254, 235);
+    opacity: 99%;
+    border-radius: 5px 10px 5px 10px;
+
+}
+.footer{
+    padding: 50px;
+    width: 100%;
+    height: 300px;
+   }
+   
+   .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+   }
+   
+      .footer .bakers{
+        width: 30%;
+        height: auto;
+    
+      }
+      .footer .bakers h1{
+        font-family: momcake;
+        text-align: center;
+        text-shadow: #a8e0f4;
+      }
+      .footer .bakers p{
+        font-family: cream;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .bakers button{
+    padding: 10px 25px;
+    margin-left: 30%;
+    margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-family: momcake;
+      border-radius: 40px;
+      border: solid 1px black;
+      background-color: rgb(177, 237, 217);
+      transition: all ;
+      transition-duration: 1s;
+      
+      }
+      .bakers button:hover{
+        background-color: #f7d3f5;
+    
+  
+      }
+      .footer .order{
+        width: 30%;
+        height: auto;
+      }
+      .footer .order h1{
+       text-align: center;
+       font-family: momcake;
+      }
+      .footer .order p{
+       padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-family: cream;
+      }
+      .order button{
+        padding: 10px 25px;
+    margin-left: 40%;
+    margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-family: momcake;
+      border-radius: 40px;
+      border: solid 1px black;
+      background-color: rgb(177, 237, 217);
+      transition: all;
+      transition-duration: 1s;
+      
+      }
+      .order button:hover{
+        background-color: #f7d3f5;
+  
+      }
+     
+  
+  .footer .contact{
+     width: 30%;
+     height: auto;
+  
+  
+   }
+   .footer .contact h1{
+    text-align: center;
+    font-family: momcake;
+   }
+   .footer .contact .social-link{
+    padding:20px;
+    text-align: center;
+    font-size: 20px;
+  
+   }
+  .contact .social-link a{
+    
+     display: inline-block;
+     font-size: 30px;
+     width: 50px;
+     height: 50px;
+     background-color: #bafbeb;
+     text-align: center;
+     line-height: 50px;
+     border-radius: 50%;
+     color: black;
+     transition: all ;
+     transition-duration: 1s;
+  
+  
+   }
+   
+   .contact .social-link a:hover{
+     background-color: #f7d3f5;
+  
+   }
+   .copyrights{
+      background-color: rgb(185, 113, 253);
+      width: 100%;
+      height:75px;
+      display: flex;
+      justify-content: space-around;
+   }
+   .copyrights h3{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family:momcake;
+   }
+

@@ -1,0 +1,521 @@
+@font-face {
+  font-family:cream;
+  src: url(cream.ttf);
+}
+@font-face {
+  font-family: momcake;
+    src: url(Momcake.otf);
+}
+@font-face {
+  font-family: style;
+  src: url(aliyah.otf);
+}
+    
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior:smooth;
+    
+}
+
+
+header{
+    background-color: rgb(255, 125, 203);
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+z-index: 1;
+  }
+
+.navbar ul{
+    display: flex;
+    color: white;
+}
+.navbar li{
+    padding-top: 30px;
+    list-style-type: none;
+    margin-left: 75px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family:'cream';
+    font-size: 20px;
+    
+    
+
+}
+.navbar ul li a{
+  position: relative;
+}
+.navbar ul li a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 3px;
+  background-color: rgb(151, 239, 239);
+
+}
+.navbar ul li a:hover::after{
+  left: 0;
+  right: 0;
+  transition: 1s;
+}
+
+.icon{
+    display: flex;
+    margin-right: 100px;
+}
+.icon ul{
+    display: flex;
+}
+.icon li{
+    padding-top: 30px;
+    list-style-type: none;
+    margin-right: 100px;
+
+}
+.icon li a{
+    color: whitesmoke;
+    font-family:cream;
+    font-size: large;
+}
+
+.logo{
+    width:fit-content;
+    height:fit-content;
+}
+.banner{
+        background-image:url(bnr.jpg);
+        width: 100%;
+        height: 700px;   
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -1;
+ }
+ .content{
+    padding-left: 700px;
+    width: 50%;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ .content h1{
+    padding-top: 150px;
+    font-size: 60px;
+    font-family:cream;
+    text-align: center;
+
+ }
+ .content p{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: momcake;
+    text-align:center;
+    width:300px;
+ }
+ .content button{
+    padding: 15px 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: momcake;
+    font-size: 20px;
+    border-radius: 40px;
+    background-color: rgb(188, 230, 215);
+    border: solid 2px rgb(121, 246, 227);
+    opacity: 99%;
+
+ 
+}
+.content button:hover{
+  color: #f69adf;
+  transition: 2s;
+}
+
+ .product{
+    background: linear-gradient(#fac1ec ,#bfe5f3);
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height:350px;
+ }
+ .product h1{
+   position: absolute;
+   margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    font-size: 50px;
+    font-family:momcake;
+    text-align: center;
+    
+
+ }
+ .product p{
+    position: absolute;
+    margin-top: 150px;
+    width:auto;
+    height: 30px;
+    font-size:30px ;
+    font-family:cream;
+    text-align: center;
+ }
+ .cards{
+    background: linear-gradient(#bfe5f3,#a8e0f4);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin-top: -100px;
+    
+
+ }
+ .cards:hover{
+  opacity: 0;
+ }
+ 
+
+
+ .card1{
+   margin: 30px;
+   border:solid 1px black;
+   height: 500px;
+   width: 300px;
+   overflow: hidden;
+   border-radius: 30px;
+   animation: anime;
+    animation-duration: 2s;
+}
+
+.card1 h1{
+  
+  margin-top: 10px;
+   font-family: style;
+   text-align: center;
+
+ }
+ .card1 p{
+   font-family: momcake;
+   text-align: justify;
+   overflow: hidden;
+   text-align: center;
+ }
+
+ 
+ .card2{
+    margin: 30px;
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 30px;
+    animation: anime;
+    animation-duration: 2s;
+ }
+ 
+ 
+ .card2 h1{
+  margin-top: 10px;
+   font-family: style;
+   text-align: center;
+
+ }
+ .card2 p{
+   font-family: momcake;
+   text-align: justify;
+   text-align: center;
+   overflow: visible;
+ }
+ .card3{
+    margin: 30px;
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 30px;
+    animation: anime;
+    animation-duration: 2s;
+ 
+ }
+
+ .card3 h1{
+  margin-top: 10px;
+   font-family: style;
+   text-align: center;
+
+ }
+ .card3 p{
+   font-family: momcake;
+   text-align: justify;
+   text-align:center;
+ }
+ .container{
+    background: linear-gradient(#a8e0f4,#9adff8,#fac1ec);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+
+ }
+ .card4{
+    margin: 30px;
+    width: 300px;
+    height:500px;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 30px;
+    animation: anime;
+    animation-duration: 2s;
+ 
+ }
+ 
+ .card4 h1{
+  margin-top: 10px;
+   font-family: style;
+   text-align: center;
+
+ }
+ .card4 p{
+   font-family: momcake;
+   text-align: justify;
+   text-align: center;
+ }
+ .card5{
+    margin: 30px;
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 30px;
+    animation: anime;
+    animation-duration: 2s;
+ 
+ }
+ 
+ .card5 h1{
+  margin-top: 10px;
+   font-family:  style;
+   text-align: center;
+
+ }
+ .card5 p{
+   font-family: momcake;
+   text-align: justify;
+   text-align: center;
+ }
+ 
+ .card6{
+   margin: 30px;
+   width: 300px;
+   height: 500px;
+   border: solid 1px black;
+   overflow: hidden;
+   border-radius: 30px;
+   animation: anime;
+   animation-duration: 2s;
+
+}
+
+  .card6 h1{
+    margin-top: 10px;
+   font-family:  style;
+   text-align: center;
+
+ }
+ .card6 p{
+   font-family: momcake;
+   text-align: justify;
+   text-align: center;
+ }
+
+ .feedback{
+   text-align: center;
+   width: auto;
+   height: 300px;
+   background: linear-gradient(#fac1ec,#f9a5e4);
+
+ }
+ .feedback h1{
+  font-family: momcake;
+  transition: all ;
+  transition-duration: 2s;
+
+ }
+ .feedback h1:hover{
+  text-decoration: underline rgb(162, 250, 237);
+ }
+ .feedback p{
+   padding-top: 30px;
+   font-size: 20px;
+   font-family: cream;
+   font-style: italic;
+
+ }
+ .feedback h3{
+   font-family:'style';
+   margin-left: 500px;
+ }
+ .feedback img{
+   border: solid 3px rgb(193, 255, 232);
+       width:70px;
+       height:70px;
+       border-radius:50%;
+     
+       
+ }
+ .footer{
+  background: linear-gradient(#f9a5e4,#f69adf);
+  width: 100%;
+  height: 300px;
+ }
+ 
+ .row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+ }
+ 
+    .footer .bakers{
+      width: 30%;
+      height: auto;
+  
+    }
+    .footer .bakers h1{
+      font-family: momcake;
+      text-align: center;
+      text-shadow: #a8e0f4;
+    }
+    .footer .bakers p{
+      font-family: cream;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .bakers button{
+  padding: 10px 25px;
+  margin-left: 30%;
+  margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: momcake;
+    border-radius: 40px;
+    border: solid 1px black;
+    background-color: rgb(177, 237, 217);
+    transition: all ;
+    transition-duration: 1s;
+    
+    }
+    .bakers button:hover{
+      background-color: #f7d3f5;
+  
+
+    }
+    .footer .order{
+      width: 30%;
+      height: auto;
+    }
+    .footer .order h1{
+     text-align: center;
+     font-family: momcake;
+    }
+    .footer .order p{
+     padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-family: cream;
+    }
+    .order button{
+      padding: 10px 25px;
+  margin-left: 40%;
+  margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: momcake;
+    border-radius: 40px;
+    border: solid 1px black;
+    background-color: rgb(177, 237, 217);
+    transition: all;
+    transition-duration: 1s;
+    
+    }
+    .order button:hover{
+      background-color: #f7d3f5;
+
+    }
+   
+
+.footer .contact{
+   width: 30%;
+   height: auto;
+
+
+ }
+ .footer .contact h1{
+  text-align: center;
+  font-family: momcake;
+ }
+ .footer .contact .social-link{
+  padding:20px;
+  text-align: center;
+  font-size: 20px;
+
+ }
+.contact .social-link a{
+  
+   display: inline-block;
+   font-size: 30px;
+   width: 50px;
+   height: 50px;
+   background-color: #bafbeb;
+   text-align: center;
+   line-height: 50px;
+   border-radius: 50%;
+   color: black;
+   transition: all ;
+   transition-duration: 1s;
+
+
+ }
+ 
+ .contact .social-link a:hover{
+   background-color: #f7d3f5;
+
+ }
+ .copyrights{
+    background-color: rgb(185, 113, 253);
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .copyrights h3{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family:momcake;
+ }
+
+
+ @media screen and (max-width:500px){
+  header{
+    width:100%;
+  }
+ .navbar ul{
+  display: none;
+ }
+
+
+ 
+  
+ }
